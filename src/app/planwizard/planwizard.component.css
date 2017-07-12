@@ -32,6 +32,23 @@ body {
     z-order: 0;
 }
 
+.plandetails-mainrow {
+    border-top: 3px solid #00a7e1 !important;
+    margin-top: 50px;
+}
+
+.td-input {
+    width: 200px;
+}
+
+.td-empty {
+    width: 150px;
+}
+
+.application-form {
+    margin-top: 20px;
+}
+
 .stepwizard-step {
     display: table-cell;
     text-align: center;
@@ -39,11 +56,154 @@ body {
 }
 
 .btn-circle {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     text-align: center;
-    padding: 6px 0;
+    padding: 2px;
     font-size: 12px;
     line-height: 1.428571429;
     border-radius: 15px;
+}
+
+.cf li {
+    list-style: none;
+}
+
+.plandetails-mainrow {
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.plandetails-mainrow .col-md-6 {
+    padding: 0px;
+}
+
+.plandetails-head h4 i {
+    color: #a62eab;
+}
+
+.plandetails-back {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.plandetails-back a {
+    float: right;
+}
+
+.tick-head {
+    padding: 20px 0px;
+}
+
+.tick-head i {
+    background: #9bd89b;
+    width: 45px;
+    height: 25px;
+    border-radius: 10px;
+    line-height: 25px;
+    padding-left: 15px;
+    color: white;
+}
+
+.plandetails-form input,
+.plandetails-form select {
+    height: 28px;
+    border-radius: 0px;
+}
+
+.plandetails-form {
+    background: #c6e3ec;
+    padding: 10px 10px 0px 10px;
+    margin-top: 20px;
+}
+
+.planmodule-listsmain {
+    margin: 0px;
+    background: #f0f7f9;
+    margin-bottom: 100px;
+}
+
+.planmodule-head {
+    padding: 20px 0px 20px 30px;
+}
+
+.planmodule-head h5 {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.plandetails-table td {
+    padding: 4px 4px 4px 6px;
+}
+
+.planmodule-ul {
+    padding-left: 0px;
+}
+
+.planmodule-ul li {
+    list-style-type: none;
+}
+
+.planmodule-ul li i {
+    color: #4c4c4c;
+    padding-right: 5px;
+}
+
+.planmodule-ul li a {
+    color: #676767;
+}
+
+.setup-panel:before {
+    top: 11px;
+    width: 84%;
+    left: 6%;
+    right: 13%;
+    height: 4px;
+}
+
+.plandetails-divbody {
+    background: lightblue;
+    padding: 4px;
+}
+
+.plandetails-divbody .col-md-2 {
+    padding: 0px 4px;
+}
+
+.plandetails-divmain .col-md-2 {
+    padding: 0px 6px;
+}
+
+.plandetails-divbody .form-group {
+    margin-bottom: 0px;
+}
+
+.Equivalencysetup {
+    left: -15px;
+    position: relative;
+}
+
+.plandetails-divmain label {
+    color: #4c4c4c;
+}
+
+.setup-panel .btn[disabled] {
+    opacity: 1;
+    background: #ccc;
+}
+
+.setup-panel {
+    color: #00a7e1
+}
+
+.stepwizard {
+    margin-bottom: 35px;
+}
+
+.stepwizard-step {
+    min-width: 70px;
+}
+
+.Equivalencysetup {
+    width: 185px;
 }

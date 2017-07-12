@@ -7,6 +7,10 @@
     margin: auto;
 }
 
+.navbar {
+    min-height: 35px;
+}
+
 .navbar-toggle {
     z-index: 3;
 }
@@ -32,12 +36,11 @@
 
 .topmenu:after {
     content: "";
-    background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
+    background: -webkit-linear-gradient(left, rgb(251, 179, 38) 0%, rgb(150, 201, 61) 30%, rgb(0, 167, 225) 60%, rgb(159, 88, 162) 100%);
     display: block;
     height: 10px;
     width: 100%;
     position: absolute;
-    bottom: 0;
 }
 
 .header-mainmenu {
@@ -49,7 +52,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
     width: 100%;
 }
 
@@ -65,7 +67,7 @@
     color: #444;
     display: block;
     font: normal 14px/35px sans-serif;
-    padding: 0 10px;
+    padding: 0 35px;
     text-align: center;
     text-decoration: none;
     -webkit-transition: all .25s ease;
@@ -109,4 +111,21 @@
 
 .header-mainmenu li ul a:hover {
     background: #bbb;
+}
+
+.nav-pills>.active>a,
+.nav-pills>.active>a:hover,
+.nav-pills>li>a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #00a7e1;
+    color: #000 !important;
+    background-color: transparent !important;
+}
+
+.nav-pills>li>a {
+    border-radius: 0px;
 }

@@ -5,132 +5,147 @@
                 <div class="stepwizard">
                     <div class="stepwizard-row setup-panel">
                         <div class="stepwizard-step">
-                            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-                            <p>Intro</p>
+                            <a href="#step-1" type="button" class="btn btn-primary btn-circle"></a>
+                            <p>Plan details</p>
                         </div>
                         <div class="stepwizard-step">
-                            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                            <p>Personal</p>
+                            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"></a>
+                            <p>Plan Period</p>
                         </div>
                         <div class="stepwizard-step">
-                            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                            <p>Program</p>
+                            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"></a>
+                            <p>Volumes</p>
                         </div>
                         <div class="stepwizard-step">
-                            <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
-                            <p>Education</p>
+                            <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"></a>
+                            <p>Leader Rules</p>
                         </div>
                         <div class="stepwizard-step">
-                            <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
-                            <p>Submit</p>
+                            <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled"></a>
+                            <p>Title Types</p>
+                        </div>
+                        <div class="stepwizard-step">
+                            <a href="#step-6" type="button" class="btn btn-default btn-circle" disabled="disabled"></a>
+                            <p>Titles</p>
+                        </div>
+                        <div class="stepwizard-step">
+                            <a href="#step-7" type="button" class="btn btn-default btn-circle" disabled="disabled"></a>
+                            <p>Bonuses</p>
+                        </div>
+                        <div class="stepwizard-step Equivalencysetup">
+                            <a href="#step-8" type="button" class="btn btn-default btn-circle" disabled="disabled"></a>
+                            <p>Equivalency Setup</p>
                         </div>
                     </div>
                 </div>
-                <form role="form">
-                    <div class="row setup-content" id="step-1">
-                        <div class="col-xs-12">
-                            <div class="col-md-12">
-                                <h1>Personal Details</h1>
-                                <div class="row" style="background: white; padding: 5%; ">
-                                    <div class="col-md-4">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="form-group">
-                                                        <select class="form-control" id="idtitle" ng-model="data.title" name="title">
-                                                    <option value="" selected="selected">Title</option>
-                                                    <option value="mr">Mr</option>
-                                                    <option value="mrs">Mrs</option>
-                                                </select>
-                                                    </div>
+                <div class="container-fluid">
+                    <form role="form">
+                        <div class="row setup-content" id="step-1">
+                            <div class="col-xs-12">
+                                <div class="col-md-12">
+                                    <div class="row plandetails-mainrow">
+                                        <div class="col-md-6 col-xs-6 plandetails-head">
+                                            <h4>Plan Details <i class="fa fa-question-circle" aria-hidden="true"></i></h4>
+                                        </div>
+                                        <div class="col-md-6 col-xs-6 plandetails-back">
+                                            <a href="#"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</a>
+                                        </div>
+                                    </div>
+                                    <div class="row tick-mainrow">
+                                        <div class="col-md-6 tick-head">
+                                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row plandetails-divmain">
+                                        <div class="col-md-2">
+                                            <label>Status</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label>Status</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label>Status</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label>Status</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label>Status</label>
+                                        </div>
+                                    </div>
+                                    <div class="row plandetails-divbody">
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <select class="form-control" id="sel1">
+                                                  <option value="" selected="selected">Draft</option>
+                                                  <option>1</option>
+                                                  <option>2</option>
+                                                  <option>3</option>
+                                                  <option>4</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="" id="sel1">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="email" placeholder="Plan Name" name="email">
                                                 </div>
-                                                <div class="col-xs-6">
-                                                    <div class="form-group">
-                                                        <select class="form-control" id="gender" ng-model="data.gender" name="gender">
-                                                    <option value="" selected="selected">Gender</option>
-                                                    <option value="male">Male</option>
-                                                    <option value="female">Female</option>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <select class="form-control" id="sel1">
+                                                    <option value="" selected="selected">Select</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
                                                 </select>
-                                                    </div>
-                                                </div>
                                             </div>
+                                        </div>
+                                        <div class="col-md-2">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" ng-model="data.fullname" name="fullname" id="inputfullname" placeholder="Full Name" required="required" text-only="text-only">
+                                                <select class="form-control" id="sel1">
+                                                    <option value="" selected="selected"></option>
+                                                  <option>1</option>
+                                                  <option>2</option>
+                                                  <option>3</option>
+                                                  <option>4</option>
+                                              </select>
                                             </div>
+                                        </div>
+                                        <div class="col-md-2">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" ng-model="data.dateofbirth" name="dateofbirth" id="dateOfBirth" placeholder="Date of Birth" required="required">
+                                                <select class="form-control" id="sel1">
+                                                    <option value="" selected="selected"></option>
+                                                  <option>1</option>
+                                                  <option>2</option>
+                                                  <option>3</option>
+                                                  <option>4</option>
+                                              </select>
                                             </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" ng-model="data.country" name="country" id="inputcountry" placeholder="Country" required="required" text-only="text-only">
-                                            </div>
-                                            <div class="checkbox">
-                                                Visa Required &nbsp;
-                                                <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" id="inputvisayes"  ng-model="data.visa" name="visa" value="required">
-                                            Yes &nbsp;
-                                        </label>
-                                                <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" id="inputvisano" ng-model="data.visa" name="visa" value="notrequired">
-                                            No &nbsp;
-                                        </label>
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                    <div class="col-md-4" style="margin-top: 49px;">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" ng-model="data.middlename" name="middlename" id="inpumiddlename" placeholder="Middle Name" required="required" text-only="text-only">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" ng-model="data.nationality" name="nationality" id="inputnationality" placeholder="Nationality" required="required" text-only="text-only">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" ng-model="data.passport" name="passport" id="inputpassport" placeholder="Passport No" required="required" y>
-                                        </div>
-                                        <div class="checkbox">
-                                            Transport Required &nbsp;
-                                            <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" id="inputtransyes" ng-model="data.transport" name="transport" value="required">
-                                            Yes &nbsp;
-                                        </label>
-                                            <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" id="inputtransno" ng-model="data.transport" name="transport" value="notrequired">
-                                        No &nbsp;
-                                        </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4" style="margin-top: 49px;">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="inputlastname" placeholder="Last Name" required="required" ng-model="data.lastname" name="lastname" text-only="text-only">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="inputcob" placeholder="Country of birth" required="required" ng-model="data.countryofbirth" name="countryofbirth" text-only="text-only">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="inputpassportvalid" placeholder="Passport valid untill" required="required" ng-model="data.passportvalidtill" name="passportvalidtill">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="inputaddress" placeholder="Address" required="required" ng-model="data.address" name="address">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="inputpostalcode" placeholder="Postal Code" required="required" ng-model="data.postalcode" name="postalcode" numbers-only="numbers-onl">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="form-group">
-                                            <button class="btn btn-primary nextBtn btn-lg pull-right" style="    right: 30px !important; bottom: 25px !important; position: absolute;" type="button">Next</button>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+                        <div class="row planmodule-listsmain">
+                            <div class="planmodule-head">
+                                <h5>Plan Module</h5>
+                                <ul class="planmodule-ul">
+                                    <li><i class="fa fa-database" aria-hidden="true"></i> <a href="# ">Plan Period</a></li>
+                                    <li><i class="fa fa-calendar" aria-hidden="true"></i> <a href="# ">Volumes</a></li>
+                                    <li><i class="fa fa-level-up" aria-hidden="true"></i> <a href="# ">Leader Rules</a></li>
+                                    <li><i class="fa fa-address-card-o" aria-hidden="true"></i> <a href="# ">Title Types</a></li>
+                                    <li><i class="fa fa-user-circle" aria-hidden="true"></i> <a href="# "> Titles</a></li>
+                                    <li><i class="fa fa-certificate" aria-hidden="true"></i> <a href="# ">Bonuses</a></li>
+                                    <li> <i class="fa fa-flag-checkered" aria-hidden="true"></i><a href="# ">Equivalency Setup</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </form>
         </div>
     </div>
