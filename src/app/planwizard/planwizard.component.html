@@ -61,16 +61,16 @@
                                             <label>Status</label>
                                         </div>
                                         <div class="col-md-2">
-                                            <label>Status</label>
+                                            <label>Plan Name</label>
                                         </div>
                                         <div class="col-md-2">
-                                            <label>Status</label>
+                                            <label>Region(s)</label>
                                         </div>
                                         <div class="col-md-2">
-                                            <label>Status</label>
+                                            <label>Model</label>
                                         </div>
                                         <div class="col-md-2">
-                                            <label>Status</label>
+                                            <label>Company</label>
                                         </div>
                                     </div>
                                     <div class="row plandetails-divbody">
@@ -92,44 +92,29 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-2">
+
+                                        <div class="col-md-2 " *ngFor="let item of elementsArray;let j = index">
                                             <div class="form-group">
-                                                <select class="form-control" id="sel1">
-                                                    <option value="" selected="selected">Select</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                </select>
+                                                <div class="button-group">
+                                                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Select <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdownmenu" *ngFor="let dropdownitem of item.select; let i = index">
+                                                            <input type="checkbox" (click)="checkedItem(j,i)" />&nbsp;{{dropdownitem}}
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <select class="form-control" id="sel1">
-                                                    <option value="" selected="selected"></option>
-                                                  <option>1</option>
-                                                  <option>2</option>
-                                                  <option>3</option>
-                                                  <option>4</option>
-                                              </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <select class="form-control" id="sel1">
-                                                    <option value="" selected="selected"></option>
-                                                  <option>1</option>
-                                                  <option>2</option>
-                                                  <option>3</option>
-                                                  <option>4</option>
-                                              </select>
-                                            </div>
-                                        </div>
+
                                     </div>
 
                                 </div>
                             </div>
                         </div>
+
+                        <div><span class=" btn btn-info btn-lg" *ngFor="let item of dropDownArray;let i =index" (click)="removeItem(i)">{{item}}<span class="glyphicon glyphicon-remove" ></span></span>
+                        </div>
+
                         <div class="row planmodule-listsmain">
                             <div class="planmodule-head">
                                 <h5>Plan Module</h5>

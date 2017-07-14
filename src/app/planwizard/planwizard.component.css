@@ -37,14 +37,6 @@ body {
     margin-top: 50px;
 }
 
-.td-input {
-    width: 200px;
-}
-
-.td-empty {
-    width: 150px;
-}
-
 .application-form {
     margin-top: 20px;
 }
@@ -206,4 +198,14 @@ body {
 
 .Equivalencysetup {
     width: 185px;
+}
+
+.dropdownmenu {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
 }
